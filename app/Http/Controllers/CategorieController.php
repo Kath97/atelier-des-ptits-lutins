@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Atelier;
 use Illuminate\Http\Request;
 
-class AtelierController extends Controller
+class CategorieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +40,10 @@ class AtelierController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Atelier  $atelier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Atelier $atelier)
+    public function show($id)
     {
         //
     }
@@ -52,10 +51,10 @@ class AtelierController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Atelier  $atelier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Atelier $atelier)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +63,10 @@ class AtelierController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Atelier  $atelier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Atelier $atelier)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +74,10 @@ class AtelierController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Atelier  $atelier
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Atelier $atelier)
+    public function destroy($id)
     {
         //
     }
