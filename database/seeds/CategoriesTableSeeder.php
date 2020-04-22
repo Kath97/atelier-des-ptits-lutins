@@ -11,9 +11,6 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
-        //
-=======
         App\Categorie::create(
             [
                 'name' => 'Bijoux'
@@ -25,6 +22,5 @@ class CategoriesTableSeeder extends Seeder
                 'name' => 'Fêtes'
             ]
         );
->>>>>>> dev
     }
 }
