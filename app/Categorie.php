@@ -8,8 +8,8 @@ class Categorie extends Model
 {
     public $timestamps = false;
 
-    public function workshops() 
+    public function ateliers() 
     { 
-        return $this->hasMany(Workshop::class); 
+        return $this->hasMany(Atelier::class); 
     }
 }
