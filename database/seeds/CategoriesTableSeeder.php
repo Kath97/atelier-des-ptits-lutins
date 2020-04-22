@@ -11,6 +11,20 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         //
+=======
+        App\Categorie::create(
+            [
+                'name' => 'Bijoux'
+            ]
+        );
+
+        App\Categorie::create(
+            [
+                'name' => 'Fêtes'
+            ]
+        );
+>>>>>>> dev
     }
 }

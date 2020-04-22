@@ -24,6 +24,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
 
     Route::resource('users','UserController');
+<<<<<<< HEAD
 
     Route::resource('workshops','WorkshopController');
 });
+=======
+});
+>>>>>>> dev

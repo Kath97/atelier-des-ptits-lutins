@@ -5,4 +5,8 @@ git add .
 git commit -m "validé"
 git push --all
 git checkout dev
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 
