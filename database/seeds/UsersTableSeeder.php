@@ -28,9 +28,6 @@ class UsersTableSeeder extends Seeder
                 'role' => 1
             ]
         );
-<<<<<<< HEAD
-=======
   
->>>>>>> dev
     }
 }
