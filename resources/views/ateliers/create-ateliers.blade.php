@@ -24,6 +24,7 @@
                 @endforeach
             </select>
           <div class="form-group">
+            @csrf
               <label for="name">Nom de l'atelier :</label>
               <input type="text" class="form-control" name="name"/>
           </div>
@@ -33,7 +34,7 @@
           </div>
           <div class="form-group">
               <label for="status">Statut :</label>
-              <input type="text" class="form-control" name="status" value="{{ $ateliers->status  }}"/>
+              <input type="text" class="form-control" name="status"/>
           </div>
           
 <!-- Ajouter le champ pour la date !!! -->
