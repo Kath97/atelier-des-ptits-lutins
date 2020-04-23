@@ -1,100 +1,92 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('content')
 
-        <title>L'Atelier des P'tits Lutins</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                L'Atelier des P'tits Lutins
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+<!-- Header -->
+<section>
+    <div id="artrousel" class="carousel slide bg-inverse " data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#artrousel" data-slide-to="0" class="active"></li>
+            <li data-target="#artrousel" data-slide-to="1"></li>
+            <li data-target="#artrousel" data-slide-to="2"></li>
+            <li data-target="#artrousel" data-slide-to="3"></li>
+            <!-- <li data-target="#artrousel" data-slide-to="4"></li> -->
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{{asset('img/img1.jpg')}}" alt="Matériel d'art">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{asset('img/img2.jpg')}}" alt="Atelier peinture sur verre">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{asset('img/img3.jpg')}}" alt="Perles pour bijoux">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{asset('img/img4.jpg')}}" alt="Atelier cuisine de Noël">
             </div>
         </div>
-    </body>
-</html>
+        <a class="carousel-control-prev" href="#artrousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#artrousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+
+    </div>
+    </div>
+    </div>
+</section>
+<!-- end - Header -->
+
+<!-- About -->
+<section>
+    <div class="col-12 col-sm-12 col-lg-12 seams">
+    <h1>À propos</h1>
+                    <p>
+                    We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal.
+                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+</div>
+    <div class="row">
+<div class="col-6 seams">
+                    <p>
+                        <h1>Adhérer</h1>
+   We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal.
+                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+</div>
+<div class="col-6 seams">
+                    <p>
+                        <h1>Ateliers</h1>
+   We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal.
+                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+</div>
+</div>
+
+<div class="col-12 col-sm-12 col-lg-12">
+    <div class="row">
+        <div class="col-10 cta">
+        <p>Nous contacter ?</p>
+        </div>
+<div class="col-2 cta">
+<!-- ajouter un lien ou bouton de renvoi vers la page contact -->
+</div>
+</div>
+</div>
+</section>
+@endsection
