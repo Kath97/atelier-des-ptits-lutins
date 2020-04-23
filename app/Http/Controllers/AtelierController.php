@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Atelier;
 use Illuminate\Http\Request;
+use App\Atelier;
+use App\Categorie;
 
 class AtelierController extends Controller
 {
@@ -41,13 +42,13 @@ class AtelierController extends Controller
             'name' => 'required|max:255',
             'description' => 'required|max:255',
             'status' => 'required|max:255',
-            'date' => 'required|numeric',
+            // 'datetime' => 'required|numeric',
             'categorie_id' => 'required|numeric', 
         ]);
 
         $show = Atelier::create($validatedData);
    
-        return redirect('/ateliers')->with('success', 'L\'atelier a bien été enregistrée dans la base de données');
+        return redirect('/ateliers')->with('success', "L'atelier a bien été enregistrée dans la base de données");
     }
 
     /**
@@ -58,7 +59,7 @@ class AtelierController extends Controller
      */
     public function show(Atelier $atelier)
     {
-        return view('atelier', compact('atelier'));
+        return view('ateliers', compact('atelier'));
     }
 
     /**
@@ -67,9 +68,9 @@ class AtelierController extends Controller
      * @param  \App\Atelier  $atelier
      * @return \Illuminate\Http\Response
      */
-    public function edit(Atelier $atelier)
+    public function edit($ateliers)
     {
-        $gourmandises = Atelier::find($ateliers);
+        $ateliers = Atelier::find($ateliers);
         $categories = Categorie::all();
         return view('ateliers/edit-ateliers', compact('ateliers','categories'));
     }
@@ -83,7 +84,15 @@ class AtelierController extends Controller
      */
     public function update(Request $request, Atelier $atelier)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'status' => 'required|max:255',
+            // 'datetime' => 'required|numeric',
+        ]);
+        Atelier::whereId($atelier)->update($validatedData);
+
+        return redirect('ateliers')->with('success', "L'atelier a bien été modifié");
     }
 
     /**
@@ -94,6 +103,7 @@ class AtelierController extends Controller
      */
     public function destroy(Atelier $atelier)
     {
-        //
+        $gourmandise->delete();
+        return back()->with('info', "L'atelier a bien été supprimé dans la base de données.");
     }
 }

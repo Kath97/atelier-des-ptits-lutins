@@ -50,7 +50,7 @@
                                 <a class="nav-link" href="{{ url('/ateliers') }}">Ateliers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/adhesions') }}">Adhésion</a>
+                                <a class="nav-link" href="{{ url('/adhesion') }}">Adhésion</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
