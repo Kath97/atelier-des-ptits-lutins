@@ -14,7 +14,8 @@ class AtelierController extends Controller
      */
     public function index()
     {
-        //
+        $ateliers = Atelier::with('categorie')->get();
+        return view('ateliers/ateliers', compact('ateliers'));
     }
 
     /**
@@ -24,7 +25,8 @@ class AtelierController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Categorie::all();
+        return view('ateliers/create-ateliers', compact('categories'));
     }
 
     /**
@@ -35,7 +37,17 @@ class AtelierController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'status' => 'required|max:255',
+            'date' => 'required|numeric',
+            'categorie_id' => 'required|numeric', 
+        ]);
+
+        $show = Atelier::create($validatedData);
+   
+        return redirect('/ateliers')->with('success', 'L\'atelier a bien été enregistrée dans la base de données');
     }
 
     /**
@@ -46,7 +58,7 @@ class AtelierController extends Controller
      */
     public function show(Atelier $atelier)
     {
-        //
+        return view('atelier', compact('atelier'));
     }
 
     /**
@@ -57,7 +69,9 @@ class AtelierController extends Controller
      */
     public function edit(Atelier $atelier)
     {
-        //
+        $gourmandises = Atelier::find($ateliers);
+        $categories = Categorie::all();
+        return view('ateliers/edit-ateliers', compact('ateliers','categories'));
     }
 
     /**
