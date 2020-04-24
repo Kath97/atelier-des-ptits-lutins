@@ -16,9 +16,9 @@ class AtelierController extends Controller
 
     public function __construct() {
 
-        $this->middleware('admin',['except' => ['index','show']]);
+        $this->middleware('checkRole',['except' => ['index','show']]);
     }
-    
+
     public function index()
     {
         $ateliers = Atelier::with('categorie')->get();
@@ -109,7 +109,7 @@ class AtelierController extends Controller
      */
     public function destroy(Atelier $atelier)
     {
-        $gourmandise->delete();
+        $atelier->delete();
         return back()->with('info', "L'atelier a bien été supprimé dans la base de données.");
     }
 }

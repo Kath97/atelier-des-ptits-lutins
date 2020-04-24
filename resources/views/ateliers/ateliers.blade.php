@@ -75,6 +75,8 @@
                                 <p class="card-text">{{$atelier->description}}</p>
                                 <p class="card-text">{{$atelier->status}}</p>
                                 <p class="card-text">{{$atelier->datetime}}</p>
+                            
+        </a>
                             </div>
 
                         </div>
