@@ -39,11 +39,12 @@
     </div>
 </section>
 <!-- end-slider -->
+
 <!-- About -->
 <section>
     <div class="totoro">
 <div class="container-fluid">
-    <div class="col-12 col-sm-12 col-lg-12">
+    <div class="col-10 col-sm-10 col-lg-12">
     <h1 class="text-center">À propos</h1>
                     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
@@ -70,7 +71,7 @@
 
 <div class="container-fluid">
 <div class="row">
-    <div id="adherer" class="col-5 col-sm-5 col-lg-5 seeds">
+    <div class="col-10 col-sm-10 col-lg-5 seeds adherer">
     <h1 class="text-center">Adhérer</h1>
                     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
@@ -83,7 +84,7 @@
 
 </div>
 
-<div id="ateliers" class="col-6 col-sm-6 col-lg-6 seeds">
+<div id="ateliers" class="col-10 col-sm-10 col-lg-6 seeds ateliers">
     <h1 class="text-center">Ateliers</h1>
     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.

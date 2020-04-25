@@ -105,12 +105,12 @@ background-size: 100% 1.2em;
 
 }
 
-#adherer{
+.adherer{
     background-color:#a8eb12bb;  
     margin:2em; 
 }
 
-#ateliers {
+.ateliers {
     background-color:#fdc211bb;
     margin-top: 2em;
 margin-left: 1.5em;
@@ -139,4 +139,52 @@ padding-bottom:1em;
 
 .bg-form{
     background-color:#ffd0dbbb;
+}
+
+#jumbopages{
+    margin-left:0em;
+}
+
+/* All cards */
+.card {
+
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+}
+
+.card:hover {
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.card-title {
+
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom:0em;
+
+}
+
+.card-subtitle {
+    margin-top:0.7em;
+}
+
+.card-text {
+    text-align: left;
+    text-indent: 0em;
+}
+
+.card-img {
+    float: right;
+    width: 5em;
+    margin-left:2em;
+    margin-right: auto;
+}
+
+.status {
+    float: right;
 }
