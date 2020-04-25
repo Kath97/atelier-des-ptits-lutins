@@ -5,7 +5,9 @@ border : red solid 2px;
 } */
 
  /* ---- Bases ---- */
-
+.min-height{
+    min-height:86.25vh;
+}
 /* Navbar */
 nav {
 
@@ -103,12 +105,6 @@ background-size: 100% 1.2em;
 
 }
 
- /* .totoro:hover {
-
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
-} */
-
 #adherer{
     background-color:#a8eb12bb;  
     margin:2em; 
@@ -133,4 +129,14 @@ background-size: 100% 1.2em;
  padding-top: 1em;
  margin-top:1em;
 padding-bottom:1em;
+}
+
+.form{
+    margin-top:10em;
+    margin-bottom:5em;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bg-form{
+    background-color:#ffd0dbbb;
 }
