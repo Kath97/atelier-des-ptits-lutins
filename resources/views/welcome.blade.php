@@ -1,15 +1,15 @@
 @extends('layouts.app')
 @section('content')
 
-<!-- Header -->
+<!-- Slider -->
 <section>
-    <div id="artrousel" class="carousel slide bg-inverse " data-ride="carousel">
+<div class=""carousel slide bg-inverse " data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#artrousel" data-slide-to="0" class="active"></li>
             <li data-target="#artrousel" data-slide-to="1"></li>
             <li data-target="#artrousel" data-slide-to="2"></li>
             <li data-target="#artrousel" data-slide-to="3"></li>
-            <!-- <li data-target="#artrousel" data-slide-to="4"></li> -->
+            
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -38,12 +38,39 @@
     </div>
     </div>
 </section>
-<!-- end - Header -->
-
+<!-- end-slider -->
 <!-- About -->
 <section>
-    <div class="col-12 col-sm-12 col-lg-12 seams">
-    <h1>À propos</h1>
+    <div class="totoro">
+<div class="container-fluid">
+    <div class="col-12 col-sm-12 col-lg-12">
+    <h1 class="text-center">À propos</h1>
+                    <p>
+                    We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal. From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+<p>
+                    We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal. From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- end-about -->
+
+<!-- Adhérer + Ateliers -->
+<section>
+<div class="container-fluid">
+    <div class="row">
+    <div id="adherer" class="col-6 col-sm-6 col-lg-6 seeds">
+    <h1 class="text-center">Adhérer</h1>
                     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
                     What more could you need when you have meat covered in cheese nestled between bread as a complete
@@ -53,40 +80,38 @@
                     figure out what you want.
 </p>
 </div>
+
+<div id="ateliers" class="col-6 col-sm-6 col-lg-6 seeds">
+    <h1 class="text-center">Ateliers</h1>
+                    <p>
+                    We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
+                    What more could you need when you have meat covered in cheese nestled between bread as a complete
+                    meal.
+                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
+                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
+                    figure out what you want.
+</p>
+</div>
+</div>
+</div>
+</div>
+</secion>
+<!-- end - Adhérer + Ateliers -->
+
+<!-- Cta Contact -->
+<section>
+<div class="container-fluid cta-end-bar">
     <div class="row">
-<div class="col-6 seams">
-                    <p>
-                        <h1>Adhérer</h1>
-   We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
-                    What more could you need when you have meat covered in cheese nestled between bread as a complete
-                    meal.
-                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
-                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
-                    figure out what you want.
-</p>
-</div>
-<div class="col-6 seams">
-                    <p>
-                        <h1>Ateliers</h1>
-   We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
-                    What more could you need when you have meat covered in cheese nestled between bread as a complete
-                    meal.
-                    From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
-                    everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to
-                    figure out what you want.
-</p>
-</div>
+    <div class="col-6 col-sm-6 col-lg-6">
+    <h2 class="text-right">Une question ? Un retour d'expérience ? </h2>
 </div>
 
-<div class="col-12 col-sm-12 col-lg-12">
-    <div class="row">
-        <div class="col-10 cta">
-        <p>Nous contacter ?</p>
-        </div>
-<div class="col-2 cta">
-<!-- ajouter un lien ou bouton de renvoi vers la page contact -->
+<div class="col-6 col-sm-6 col-lg-6 text-center">
+<a class="btn btn-danger btn-lg " href="#" role="button">Contactez-nous !</a>
 </div>
 </div>
 </div>
-</section>
+</div>
+</secion>
+<!-- end - Cta Contact -->
 @endsection

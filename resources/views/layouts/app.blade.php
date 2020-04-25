@@ -24,11 +24,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" >
 </head>
 
 <body>
-    <!-- Navbar -->
+        <!-- Navbar -->
     <header>
         <div>
             <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-black shadow-sm">
@@ -94,7 +94,7 @@
     </header>
 
     <!-- Content -->
-    <main class="py-4">
+    <main id="body-color">
         @yield('content')
     </main>
 
