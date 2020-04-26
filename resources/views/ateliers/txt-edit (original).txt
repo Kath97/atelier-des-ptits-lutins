@@ -1,22 +1,17 @@
 @extends('layouts.app')
 @section('content')
-<div class="min-height bg-ateliers">
-  <div class="container">
-<div class="row justify-content-center">
-        <div class="col-md-8">
-        <div class="card form">
-                <div class="card-header">{{ __('Éditer un atelier') }}</div>
-
-                @if ($errors->any())
+<h1 class="text-center">Éditer les ateliers</h1>
+  
+    @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
             @endforeach
         </ul>
+      </div><br />
     @endif
 
-    <div class="card-body">
     <form class="form-css form-log-rec px-4" method="post" action="{{ route('ateliers.update', $ateliers->id)}}">
     
     
@@ -30,7 +25,6 @@
                 @endforeach
             </select>
 </div>
-
           <div class="form-group">
           @csrf
               @method('PATCH')
@@ -50,13 +44,3 @@
 
           <button type="submit" class="btn btn-dark btn-lg btn-block">Modifier</button>
       </form>
-
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-@endsection

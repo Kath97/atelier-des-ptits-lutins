@@ -71,7 +71,7 @@
 
 <div class="container-fluid">
 <div class="row">
-    <div class="col-10 col-sm-10 col-lg-5 seeds adherer">
+    <div class="col-10 col-sm-10 col-lg-5 seeds adherer bg-adherer">
     <h1 class="text-center">Adhérer</h1>
                     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
@@ -84,7 +84,7 @@
 
 </div>
 
-<div id="ateliers" class="col-10 col-sm-10 col-lg-6 seeds ateliers">
+<div class="col-10 col-sm-10 col-lg-6 seeds ateliers bg-ateliers">
     <h1 class="text-center">Ateliers</h1>
     <p>
                     We are lucky to live in a glorious age that gives us everything we could ask for as a human race.
@@ -103,10 +103,10 @@
 
 <!-- Cta Contact -->
 <section>
-<div class="container-fluid cta-end-bar">
+<div class="container-fluid contact-bar bg-contact">
     <div class="row">
     <div class="col-6 col-sm-6 col-lg-6">
-    <h2 class="text-right">Une question ? Un retour d'expérience ? </h2>
+    <h2 class="text-right">Une question ? Un avis ? Une adhésion ?</h2>
 </div>
 
 <div class="col-6 col-sm-6 col-lg-6 text-center">

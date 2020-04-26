@@ -1,23 +1,23 @@
 @extends('layouts.app')
 @section('content')
-
+<div class="min-height bg-ateliers">
   <div class="container">
 <div class="row justify-content-center">
         <div class="col-md-8">
+        <div class="card form">
+                <div class="card-header">{{ __('Créer un atelier') }}</div>
 
-<h1 class="text-center">Créer un atelier</h1>
-  
-    @if ($errors->any())
+                @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
             @endforeach
-        </ul>
-      </div><br />
+</ul> 
     @endif
 
-    <form  class="form-css form-log-rec px-4" method="post" action="{{ route('ateliers.store') }}">
+<div class="card-body">
+<form  class="form-log-rec px-4" method="post" action="{{ route('ateliers.store') }}">
           <select name="categorie_id">
                 @foreach($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -42,6 +42,14 @@
           <button type="submit" class="btn btn-dark btn-lg btn-block">Créer</button>
 
       </form>
+
+
+</div>
+
+
+
+</div>
+</div>
 </div>
 </div>
 </div>

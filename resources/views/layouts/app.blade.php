@@ -9,7 +9,7 @@
   <!-- Bootstrap CDN - Font Awesome -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -48,9 +48,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/ateliers') }}">Ateliers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/adhesion') }}">Adhésion</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
