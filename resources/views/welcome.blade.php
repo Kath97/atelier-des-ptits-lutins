@@ -110,7 +110,7 @@
 </div>
 
 <div class="col-6 col-sm-6 col-lg-6 text-center">
-<a class="btn btn-danger btn-lg " href="#" role="button">Contactez-nous !</a>
+<a class="btn btn-danger btn-lg " href="{{ url('/contact') }}" role="button">Contactez-nous !</a>
 </div>
 </div>
 </div>
