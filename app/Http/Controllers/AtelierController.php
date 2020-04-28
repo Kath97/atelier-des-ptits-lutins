@@ -96,7 +96,7 @@ class AtelierController extends Controller
             'status' => 'required|max:255',
             // 'datetime' => 'required|numeric',
         ]);
-        Atelier::whereId($atelier)->update($validatedData);
+        $atelier->update($validatedData);
 
         return redirect('ateliers')->with('success', "L'atelier a bien été modifié");
     }

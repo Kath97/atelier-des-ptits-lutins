@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
                 'name' => 'lutins',
                 'email' => 'atelierdesptitslutins@gmail.com',
                 'password' => bcrypt('pass'),
-                'role' => 2
+                'role' => 1
             ]
         );
 
@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder
                 'name' => 'kath',
                 'email' => 'kathleen.malialin@gmail.com',
                 'password' => bcrypt('pass'),
-                'role' => 1
+                'role' => 2
             ]
         );
   

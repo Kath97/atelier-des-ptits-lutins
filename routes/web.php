@@ -23,8 +23,9 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::resource('users','UserController');
 
-    Route::resource('ateliers','AtelierController');
 });
+
+Route::resource('ateliers','AtelierController');
 
 Route::get('/contact', function () {
     return view('contact');
