@@ -95,6 +95,7 @@ class AtelierController extends Controller
             'description' => 'required|max:255',
             'status' => 'required|max:255',
             // 'datetime' => 'required|numeric',
+            'categorie_id' => 'required|numeric'
         ]);
         $atelier->update($validatedData);
 
