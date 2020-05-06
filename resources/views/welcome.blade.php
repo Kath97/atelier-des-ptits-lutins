@@ -11,7 +11,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{asset('img/img1.jpg')}}" alt="Matériel d'art">
+                    <img class="d-block w-100" src="{{asset('img/img1-1.jpg')}}" alt="Matériel d'art">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="{{asset('img/img2-1.jpg')}}" alt="Atelier peinture sur verre">
@@ -20,16 +20,16 @@
                     <img class="d-block w-100" src="{{asset('img/img3-1.jpg')}}" alt="Perles pour bijoux">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('img/img4.jpg')}}" alt="Atelier cuisine de Noël">
+                    <img class="d-block w-100" src="{{asset('img/img4-1.jpg')}}" alt="Atelier cuisine de Noël">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#artrouselIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Précédent</span>
             </a>
             <a class="carousel-control-next" href="#artrouselIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Suivant</span>
             </a>
         </div>
     </section>
