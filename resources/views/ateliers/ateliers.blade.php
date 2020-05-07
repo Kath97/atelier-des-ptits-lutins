@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-
 <div class="bg-ateliers">
 
 <!-- Header -->
@@ -34,8 +33,10 @@
                         <h2 class="card-title">{{$atelier->categorie->name}}</h2>
                         <h3 class="card-subtitle">{{$atelier->name}}</h3>
                                 <p class="card-text">{{$atelier->description}}</p>
-                                
-                                <p class="card-text">{{$atelier->datetime}}</p>
+                                <p class="card-text">
+                                    <?php
+                                    echo date("d-m-Y h:i:s", strtotime($atelier->datetime))
+                                ?></p>
 
                                 @auth
                             @if (Auth::user()->role == 1) 

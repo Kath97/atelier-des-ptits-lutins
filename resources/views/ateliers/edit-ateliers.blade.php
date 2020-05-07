@@ -39,14 +39,18 @@
           </div>
           <div class="form-group">
               <label for="description">Description :</label>
-              <input type="text" class="form-control" name="description" value="{{ $ateliers->description  }}"/>
+              <input type="text" class="form-control" name="description" value="{{ $ateliers->description }}"/>
           </div>
           <div class="form-group">
               <label for="status">Statut :</label>
-              <input type="text" class="form-control" name="status" value="{{ $ateliers->status  }}"/>
+              <input type="text" class="form-control" name="status" value="{{ $ateliers->status }}"/>
           </div>
           
 <!-- Ajouter le champ pour la date !!! -->
+<div class="form-group">
+              <label for="datetime">Date :</label>
+              <input type="date" class="form-control" name="datetime" value="{{ $ateliers->datetime }}"/>
+          </div>
 
           <button type="submit" class="btn btn-dark btn-lg btn-block">Modifier</button>
       </form>

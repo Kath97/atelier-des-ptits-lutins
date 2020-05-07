@@ -48,7 +48,7 @@ class AtelierController extends Controller
             'name' => 'required|max:255',
             'description' => 'required|max:255',
             'status' => 'required|max:255',
-            // 'datetime' => 'required|numeric',
+            'datetime' => 'required|max:255',
             'categorie_id' => 'required|numeric', 
         ]);
 
@@ -94,8 +94,8 @@ class AtelierController extends Controller
             'name' => 'required|max:255',
             'description' => 'required|max:255',
             'status' => 'required|max:255',
-            // 'datetime' => 'required|numeric',
-            'categorie_id' => 'required|numeric'
+            'datetime' => 'required|max:255',
+            'categorie_id' => 'required|numeric',
         ]);
         $atelier->update($validatedData);
 
