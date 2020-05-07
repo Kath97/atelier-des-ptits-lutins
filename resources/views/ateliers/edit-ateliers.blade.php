@@ -46,7 +46,6 @@
               <input type="text" class="form-control" name="status" value="{{ $ateliers->status }}"/>
           </div>
           
-<!-- Ajouter le champ pour la date !!! -->
 <div class="form-group">
               <label for="datetime">Date :</label>
               <input type="date" class="form-control" name="datetime" value="{{ $ateliers->datetime }}"/>

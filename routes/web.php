@@ -31,8 +31,3 @@ Route::get('/contact', function () {
     return view('contact');
 
 });
-
-Route::get('/adhesion', function () {
-    return view('adhesion');
-
-});

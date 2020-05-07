@@ -1,23 +1,13 @@
 @extends('layouts.app')
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="min-height bg-form">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Header -->
+  <div id="bloc-ateliers" class="container my-5">
+    <h1 class="text-center">Liste des participants</h1>
+    <p class="lead text-center">Ici, vous pourez lire une petite phrase d'accroche pour vous donner un peu de joie au coeur.</p>
 </div>
+<!-- end - Header -->
+</div>
+
 @endsection
