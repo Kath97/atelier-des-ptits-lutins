@@ -38,8 +38,9 @@
                 <div class="container">
 
                     <!-- Brand -->
-                    <a class="navbar-brand" href="{{ url('/') }}">L'Atelier des P'tits Lutins</a>
-
+                    <!-- <a class="navbar-brand" href="{{ url('/') }}">L'Atelier des P'tits Lutins</a> -->
+                    <img id="logo-nav-brand" class="navbar-brand" src="{{asset('img/logo-b_adpl.png')}}" alt="L'Atelier des P'tits Lutins">
+                    
                     <!-- Hamburger menu -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
