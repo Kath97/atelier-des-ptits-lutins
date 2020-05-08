@@ -25,7 +25,6 @@
                             <a href="{{ route('ateliers.edit', $atelier->id)}}" class="btn btn-primary"><i
                                     class="fa fa-pencil" aria-hidden="true"></i>
                             </a>
-
                             @endif
                                 @endif
                                 <div class="card-header status-trash">{{$atelier->status}}</div>   
@@ -50,9 +49,19 @@
                                         aria-hidden="true"></i></button>
 
                             </form>
+
+                            <a href="{{ route('home') }}" class="alert-link inscrits">Liste des inscrits</a>  
                             @endif
                             @endif
     <!-- end - Admin btn panel -->
+    <!-- Btn - Inscription -->
+    @auth
+                            @if (Auth::user()->role == 2)
+                            <button class="btn btn-dark register-wkshp" type="submit">Inscription</button>
+
+                            @endif
+                                @endif
+    <!-- end - Btn - Inscription  -->
                     </div>
 </div>
                     </div>
