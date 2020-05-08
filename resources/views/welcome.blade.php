@@ -93,8 +93,7 @@
                     meal.</p>
                 <p>From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for
                     everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all
-                    to
-                    figure out what you want.
+                    to figure out what you want.
                 </p>
             </div>
         </div>
@@ -106,7 +105,7 @@
           <div class="row">
             <div class="col-6 col-sm-6 col-lg-6">
                     <h2 class="text-right">Une question ? Un avis ? Une adhésion ?</h2>
-                </div>
+                </div>   
                 <div class="col-6 col-sm-6 col-lg-6 text-center">
                     <a class="btn btn-danger btn-lg " href="{{ url('/contact') }}" role="button">Contactez-nous
                         !</a>
